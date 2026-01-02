@@ -26,7 +26,7 @@ The information header contains the image size, its color palette (here 24 bits,
 
 After these headers comes the image, structured in lines, where the number of bytes is a multiple of 4. If there are fewer pixels (for example, a line of 99 bytes), a number of empty bytes must be added to reach the next multiple of 4 (in this case, 1 empty byte must be added).
 To calculate this padding, we use modulos, with the following formula :
-$p = (4-r \% 4) \%4$ where $p$ is the padding and $r$ the row size.
+$$p = (4-(r \mod 4)) \mod 4 $$ where $p$ is the padding and $r$ the row size.
 
 The blur algorithm is a convolution algorithm. For each pixel in the image, it averages the values of the 8 surrounding pixels and applies this to the central pixel. The original image must therefore be copied into memory, as the unblurred values are needed to apply the filter.
 
