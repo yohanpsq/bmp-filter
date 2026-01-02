@@ -37,7 +37,7 @@ The blur algorithm is a convolution algorithm. For each pixel in the image, it a
 * `Makefile` : for compilation
 
 ## Installation and use
-**Prerequisites** : GCC, Make
+**Prerequisites** : GCC, Make  
 To compile the project : 
 ```bash
 make
