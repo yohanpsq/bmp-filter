@@ -1,7 +1,20 @@
 # Bitmap Filter Engine
 The goal of this personal project is to transform a 24-bit bitmap image by applying different filters to it. It is a project developed entirely in C, without any external libraries, which manages the binary structure of .bmp files. This project allowed me to deepen my knowledge of memory management and binary data reading, starting from scratch without any external libraries. 
 
-<p  align="center">  <table  style="width:100%">  <tr>  <th  style="text-align:center">Original Image</th>  <th  style="text-align:center">Filtered Image (Blur 50)</th>  </tr>  <tr>  <td><img  src="assets/image.jpg"  width="50%"></td>  <td><img src="assets/output.jpg"  width="50%"></td>  </tr>  </table>  </p>
+<table style="margin:auto; table-layout:auto;">
+  <tr>
+    <th style="text-align:center">Original Image</th>
+    <th style="text-align:center">Filtered Image (Blur 50)</th>
+  </tr>
+  <tr>
+    <td style="text-align:center">
+      <img src="assets/image.jpg" style="width:auto; max-width:100%;">
+    </td>
+    <td style="text-align:center">
+      <img src="assets/output.jpg" style="width:auto; max-width:100:%;">
+    </td>
+  </tr>
+</table>
 
  ## Features
  **File format :** handles 24-bit bitmap file and alignment padding.  
